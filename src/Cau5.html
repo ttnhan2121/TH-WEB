@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table, th, td{
+            border: 2px solid;
+        }
+        table{
+            border-collapse: collapse;
+        }
+        tr,th,td{
+            border-color: orangered;
+            padding: 10px;
+        }
+        th{
+            color: white;
+            background-color: red;
+        }
+        .box{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        h1{
+            color: red;
+        }
+        .align-text{
+            text-align: center;
+            color:red;
+        }
+        .special{
+            text-align: left !important;
+            color: red;
+        }
+        td:nth-last-child(2){
+            text-align: center;
+        }
+        td:nth-last-child(1){
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h1>Chương trình học  - ngành lập trình</h1>
+        <table>
+            <tr>
+                <th rowspan="2">Nhóm học phần</th>
+                <th rowspan="2">Môn học</th>
+                <th colspan="2">Số tiết
+                </th>
+            </tr>
+            <tr>
+                <th>Lý thuyết</th>
+                <th>Thực hành</th>
+            </tr>
+            <tr>
+                <td rowspan="6" class="align-text">I <br> Tin học văn phòng</td>
+                <td>
+                    Hệ điều hành Windows
+                </td>
+                <td>3</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>
+                    Sử dụng Internet
+                </td>
+                <td>3</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>
+                    Soạn thảo văn bản với MS Word
+                </td>
+                <td>24</td>
+                <td>40</td>
+            </tr><tr>
+                <td>
+                    Tạo bài trình diễn với MS PowerPoint
+                </td>
+                <td>9</td>
+                <td>15</td>
+            </tr><tr>
+                <td>
+                    Xử lý số liệu với MS Excel
+                </td>
+                <td>24</td>
+                <td>40</td>
+            </tr><tr>
+                <td>
+                    Tạo trang Web với MS FrontPage
+                </td>
+                <td>9</td>
+                <td>15</td>
+            </tr>
+            <tr>
+                <td rowspan="2" class="align-text">
+                    II <br> Kỹ thuật lập trình (VB.NET)
+                </td>
+                <td>
+                    Nhập môn lập trình
+                </td>
+                <td>36</td>
+                <td>60</td>
+            </tr>
+            <tr>
+                <td>Kỹ thuật lập trình</td>
+                <td>36</td>
+                <td>60</td>
+            </tr>
+            <tr><td colspan="4" class="special">...</td></tr>
+        </table>
+    </div>
+</body>
+</html>
